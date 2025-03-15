@@ -4,7 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/karan-handa-clg/Lab2_Question2_COMP367.git'
+                script {
+                    checkout([$class: 'GitSCM',
+                             branches: [[name: 'refs/heads/main']],
+                             userRemoteConfigs: [[url: 'https://github.com/karan-handa-clg/Lab2_Question2_COMP367.git']]
+                    ])
+                }
             }
         }
 
