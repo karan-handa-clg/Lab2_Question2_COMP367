@@ -13,6 +13,6 @@ public class App {
             greeting = "Good afternoon";
         }
 
-        System.out.println(greeting + ", Karan, Welcome to COMP367");
+        System.out.println(greeting + ", Karan!, Welcome to COMP367");
     }
 }
